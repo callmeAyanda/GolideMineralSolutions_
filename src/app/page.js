@@ -1,7 +1,18 @@
 import { React } from "react";
+import "./globals.css";
+
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
 
 
-export default function App(){
-  return <></>
+export default function Home() {
+  return (
+    <main>
+      <Hero />
+      <About />
+      
+    </main>
+  );
 }
 
