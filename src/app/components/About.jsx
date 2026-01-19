@@ -1,4 +1,4 @@
-// src/app/components/About.jsx
+
 'use client';
 
 import { 
@@ -107,8 +107,8 @@ export default function About() {
                 <Target size={28} />
               </IconBox>
               <div>
-                <h3 className="text-2xl font-bold text-[#22313f] mb-2">Our Vision</h3>
-                <p className="text-[#34495e]">
+                <h3 className="text-2xl font-bold text-[#8dc6ff] mb-2">Our Vision</h3>
+                <p className="text-[#e4f1fe]">
                   To be the global benchmark in sustainable mineral construction, 
                   transforming skylines while preserving our planet for future generations.
                 </p>
@@ -123,7 +123,7 @@ export default function About() {
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle className="text-[#8dc6ff]" size={20} />
-                  <span className="text-[#34495e]">{item}</span>
+                  <span className="text-[#e4f1fe]">{item}</span>
                 </div>
               ))}
             </div>
@@ -136,8 +136,8 @@ export default function About() {
                 <Zap size={28} />
               </IconBox>
               <div>
-                <h3 className="text-2xl font-bold text-[#22313f] mb-2">Our Mission</h3>
-                <p className="text-[#34495e]">
+                <h3 className="text-2xl font-bold text-[#8dc6ff] mb-2">Our Mission</h3>
+                <p className="text-[#e4f1fe]">
                   To deliver exceptional mineral construction projects through innovative 
                   solutions, unwavering integrity, and sustainable practices worldwide.
                 </p>
@@ -145,20 +145,20 @@ export default function About() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center p-4 bg-[#e4f1fe]/20 rounded-xl">
-                <div className="text-3xl font-bold text-[#22313f]">98%</div>
-                <div className="text-sm text-[#34495e]">Client Satisfaction</div>
+                <div className="text-3xl font-bold text-[#e4f1fe]">98%</div>
+                <div className="text-sm text-[#e4f1fe]">Client Satisfaction</div>
               </div>
               <div className="text-center p-4 bg-[#e4f1fe]/20 rounded-xl">
-                <div className="text-3xl font-bold text-[#22313f]">50+</div>
-                <div className="text-sm text-[#34495e]">Countries Served</div>
+                <div className="text-3xl font-bold text-[#e4f1fe]">50+</div>
+                <div className="text-sm text-[#e4f1fe]">Countries Served</div>
               </div>
               <div className="text-center p-4 bg-[#e4f1fe]/20 rounded-xl">
-                <div className="text-3xl font-bold text-[#22313f]">15+</div>
-                <div className="text-sm text-[#34495e]">Years Experience</div>
+                <div className="text-3xl font-bold text-[#e4f1fe]">15+</div>
+                <div className="text-sm text-[#e4f1fe]">Years Experience</div>
               </div>
               <div className="text-center p-4 bg-[#e4f1fe]/20 rounded-xl">
-                <div className="text-3xl font-bold text-[#22313f]">250+</div>
-                <div className="text-sm text-[#34495e]">Projects Delivered</div>
+                <div className="text-3xl font-bold text-[#e4f1fe]">250+</div>
+                <div className="text-sm text-[#e4f1fe]">Projects Delivered</div>
               </div>
             </div>
           </Card>
@@ -186,7 +186,7 @@ export default function About() {
                   </IconBox>
                 </div>
                 <h4 className="text-xl font-bold text-[#22313f] mb-2">{value.title}</h4>
-                <p className="text-[#34495e]">{value.description}</p>
+                <p className="text-[#e4f1fe]">{value.description}</p>
               </Card>
             ))}
           </div>
@@ -233,8 +233,8 @@ export default function About() {
                   {/* Right Side - Content */}
                   <div className="lg:w-1/2 lg:px-8 mt-4 lg:mt-0">
                     <Card className="p-6">
-                      <h4 className="text-xl font-bold text-[#22313f] mb-2">{milestone.title}</h4>
-                      <p className="text-[#34495e]">{milestone.description}</p>
+                      <h4 className="text-xl font-bold text-[#e4f1fe] mb-2">{milestone.title}</h4>
+                      <p className="text-[#e4f1fe]">{milestone.description}</p>
                     </Card>
                   </div>
                 </div>
@@ -267,7 +267,7 @@ export default function About() {
                   {member.avatar}
                 </div>
                 <h4 className="text-xl font-bold text-[#22313f] mb-1">{member.name}</h4>
-                <p className="text-[#8dc6ff] font-medium mb-3">{member.role}</p>
+                <p className="text-[#e4f1fe] font-medium mb-3">{member.role}</p>
                 <p className="text-sm text-[#34495e] mb-4">{member.expertise}</p>
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <Button variant="ghost" size="sm" className="w-full">
@@ -279,33 +279,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* CTA Section */}
-        <Card className="p-8 md:p-12 text-center relative overflow-hidden">
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-0 right-0 w-32 h-32 border-2 border-[#8dc6ff] rounded-full transform translate-x-16 -translate-y-16"></div>
-            <div className="absolute bottom-0 left-0 w-40 h-40 border-2 border-[#34495e] rounded-full transform -translate-x-16 translate-y-16"></div>
-          </div>
-
-          <div className="relative z-10">
-            <Award className="w-16 h-16 mx-auto mb-6 text-[#8dc6ff]" />
-            <h3 className="text-3xl font-bold text-[#22313f] mb-4">
-              Ready to Build Your Vision?
-            </h3>
-            <p className="text-xl text-[#34495e] max-w-2xl mx-auto mb-8">
-              Join hundreds of satisfied clients who have trusted us with their most ambitious projects.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="group">
-                Start Your Project
-                <ChevronRight className="inline ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="lg">
-                Download Brochure
-              </Button>
-            </div>
-          </div>
-        </Card>
+        
       </div>
     </SectionContainer>
   );

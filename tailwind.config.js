@@ -16,6 +16,8 @@ module.exports = {
         'pulse-glow': 'pulse-glow 2s infinite',
         'gradient-border': 'gradientBorder 3s ease infinite',
         'text-reveal': 'textReveal 1.5s ease-out forwards',
+        'modal-enter': 'modalEnter 0.3s ease-out',
+        'pulse-slow': 'pulseSlow 3s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -47,6 +49,20 @@ module.exports = {
         textReveal: {
           'from': { clipPath: 'inset(0 100% 0 0)' },
           'to': { clipPath: 'inset(0 0 0 0)' },
+        },
+        modalEnter: {
+          'from': {
+            opacity: '0',
+            transform: 'scale(0.95) translateY(20px)',
+          },
+          'to': {
+            opacity: '1',
+            transform: 'scale(1) translateY(0)',
+          },
+        },
+        pulseSlow: {
+          '0%, 100%': { opacity: '0.8' },
+          '50%': { opacity: '0.4' },
         },
       },
       backgroundImage: {
