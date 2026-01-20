@@ -15,7 +15,7 @@ export default function Card({
         highlight: 'bg-gradient-to-br from-[#8dc6ff]/20 to-[#34495e]/40 border border-[#8dc6ff]/30'
     };
 
-    const hoverEffect = hover ? 'hover:scale-105 hover:shadow-xl hover:shadow-[#8dc6ff]/10' : '';
+    const hoverEffect = '';
 
     return (
         <div className={`${baseStyles} ${variants[variant]} ${hoverEffect} ${className}`}>

@@ -120,7 +120,7 @@ export default function Footer() {
                                     <a
                                         key={index}
                                         href={social.href}
-                                        className="w-10 h-10 rounded-lg bg-[#34495e]/30 flex items-center justify-center text-[#e4f1fe] hover:bg-gradient-to-br hover:from-[#8dc6ff] hover:to-[#34495e] transition-all hover:scale-110"
+                                        className="w-10 h-10 rounded-lg bg-[#34495e]/30 flex items-center justify-center text-[#e4f1fe] hover:bg-gradient-to-br hover:from-[#8dc6ff] hover:to-[#34495e] transition-all"
                                         aria-label={social.label}
                                     >
                                         {social.icon}
@@ -260,7 +260,7 @@ export default function Footer() {
                                     {link.label}
                                 </Link>
                             ))}
-                        </div>                        
+                        </div>
                     </div>
 
                     {/* Made with love */}
@@ -274,7 +274,7 @@ export default function Footer() {
                 {/* Back to Top Button */}
                 <button
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                    className="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-br from-[#8dc6ff] to-[#34495e] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all z-40"
+                    className="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-br from-[#8dc6ff] to-[#34495e] text-white rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all z-40"
                     aria-label="Back to top"
                 >
                     ↑

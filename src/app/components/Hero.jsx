@@ -84,7 +84,7 @@ export default function Hero() {
                   className="group"
                   onClick={() => console.log('Learn More clicked')}
                 >
-                  <Play className="inline mr-2 group-hover:scale-110 transition-transform" />
+                  <Play className="inline mr-2 transition-transform" />
                   Watch Showcase
                 </Button>
               </div>
@@ -94,7 +94,7 @@ export default function Hero() {
                 {stats.map((stat, index) => (
                   <div
                     key={index}
-                    className="bg-gradient-to-br from-[#34495e]/50 to-[#22313f]/50 backdrop-blur-sm border border-[#e4f1fe]/10 rounded-2xl p-4 transform hover:scale-105 transition-all duration-300"
+                    className="bg-gradient-to-br from-[#34495e]/50 to-[#22313f]/50 backdrop-blur-sm border border-[#e4f1fe]/10 rounded-2xl p-4 transition-all duration-300"
                   >
                     <div className="flex items-center justify-center gap-2 mb-2">
                       {stat.icon}

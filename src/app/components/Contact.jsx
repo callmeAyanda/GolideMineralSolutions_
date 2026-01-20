@@ -557,14 +557,13 @@ export default function Contact() {
                                 Join over 250 successful clients who have trusted us with their most ambitious construction projects.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                <Button size="lg" variant="secondary" className="group">
+                                <Button size="lg" className="group">
                                     Schedule Consultation
-                                    <Calendar className="inline ml-2 group-hover:scale-110 transition-transform" />
+                                    <Calendar className="inline ml-2 transition-transform" />
                                 </Button>
                                 <Button
                                     size="lg"
-                                    variant="outline"
-                                    className="text-white border-white hover:bg-white hover:text-[#22313f]"
+                                    className="text-white border-white hover:text-[#22313f]"
                                 >
                                     Download Brochure
                                     <ChevronRight className="inline ml-2" />
