@@ -6,6 +6,7 @@ import {
     Globe, BarChart3, CheckCircle, ArrowRight,
     Toolbox, Anchor, HardHat, Truck
 } from 'lucide-react';
+
 import SectionContainer from './SectionContainer';
 import Card from './Card';
 import IconBox from './IconBox';
@@ -13,7 +14,8 @@ import Button from './Button';
 import Tabs from './Tabs';
 import { useState, useEffect } from 'react';
 
-// Define ServiceCard component outside to avoid reference error
+
+
 const ServiceCard = ({ service, onClick }) => (
     <Card
         className="p-6 group cursor-pointer h-full flex flex-col"

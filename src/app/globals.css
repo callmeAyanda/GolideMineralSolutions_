@@ -400,3 +400,234 @@ button, a, input, select {
   background-size: 20px 20px;
 }
 
+
+/* Form focus styles */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #8dc6ff;
+  box-shadow: 0 0 0 3px rgba(141, 198, 255, 0.1);
+}
+
+/* Custom checkbox styling */
+input[type="checkbox"] {
+  accent-color: #8dc6ff;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:focus {
+  outline: 2px solid #8dc6ff;
+  outline-offset: 2px;
+}
+
+/* Form validation styles */
+input:invalid, textarea:invalid {
+  border-color: #ff6b6b;
+}
+
+input:valid, textarea:valid {
+  border-color: #51cf66;
+}
+
+/* Smooth form transitions */
+input, textarea, select, button {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Loading animation for submit button */
+@keyframes button-loading {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.button-loading {
+  animation: button-loading 1.5s ease-in-out infinite;
+}
+
+/* Success animation */
+@keyframes success-pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.success-pulse {
+  animation: success-pulse 0.6s ease-in-out;
+}
+
+/* Tab transition */
+.tab-transition {
+  transition: all 0.3s ease;
+}
+
+/* Office selector animation */
+.office-selector {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.office-selector:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Map hover effect */
+.map-container {
+  transition: all 0.3s ease;
+}
+
+.map-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Add to src/app/globals.css */
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Back to top button animation */
+@keyframes float-up {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.float-up {
+  animation: float-up 3s ease-in-out infinite;
+}
+
+/* Gradient underline for footer headings */
+.footer-heading {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(to right, #8dc6ff, #34495e);
+  border-radius: 2px;
+}
+
+/* Hover effect for footer links */
+.footer-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  transform: translateX(5px);
+}
+
+/* Social icon hover effects */
+.social-icon {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Newsletter input focus */
+.newsletter-input:focus {
+  box-shadow: 0 0 0 3px rgba(141, 198, 255, 0.2);
+}
+
+/* Certificate badges animation */
+@keyframes badge-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(141, 198, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(141, 198, 255, 0.6);
+  }
+}
+
+.badge-glow {
+  animation: badge-glow 2s ease-in-out infinite;
+}
+
+/* Location cards hover effect */
+.location-card {
+  transition: all 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Legal links separator */
+.legal-link:not(:last-child)::after {
+  content: '•';
+  margin-left: 16px;
+  color: #34495e;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .footer-heading::after {
+    width: 30px;
+  }
+  
+  .legal-link:not(:last-child)::after {
+    margin-left: 12px;
+  }
+}
+
+/* Dark mode adjustments (if needed) */
+@media (prefers-color-scheme: dark) {
+  footer {
+    background: linear-gradient(to bottom, #1a2633, #0a111a);
+  }
+  
+  .location-card {
+    background: rgba(52, 73, 94, 0.4);
+  }
+}
+
+/* Print styles */
+@media print {
+  footer {
+    background: none;
+    color: #000;
+  }
+  
+  .social-icons,
+  .back-to-top {
+    display: none;
+  }
+}
+
+
+

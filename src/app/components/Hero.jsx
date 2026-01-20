@@ -1,4 +1,3 @@
-// src/app/components/Hero.jsx
 'use client';
 
 import { ArrowRight, Play, Shield, Award, Clock } from 'lucide-react';
