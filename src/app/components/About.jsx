@@ -91,7 +91,7 @@ export default function About() {
             <span className="text-sm font-medium">Our Story</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-[#22313f] mb-6">
-            Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8dc6ff] to-[#34495e]">Tomorrow</span> Today
+            Building Tomorrow Today
           </h2>
           <p className="text-xl text-[#34495e]">
             Pioneering mineral construction solutions that bridge innovation with sustainability across global landscapes.
@@ -268,9 +268,9 @@ export default function About() {
                 <h4 className="text-xl font-bold text-[#22313f] mb-1">{member.name}</h4>
                 <p className="text-[#e4f1fe] font-medium mb-3">{member.role}</p>
                 <p className="text-sm text-[#34495e] mb-4">{member.expertise}</p>
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Button variant="ghost" size="sm" className="w-full">
-                    View Profile <ChevronRight size={16} className="ml-1" />
+                <div>
+                  <Button size="sm" className="w-full bg-[#22313f]">
+                    View Profile
                   </Button>
                 </div>
               </Card>

@@ -246,7 +246,7 @@ export default function Projects() {
                         <span className="text-sm font-medium">Our Portfolio</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-[#22313f] mb-6">
-                        Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8dc6ff] to-[#34495e]">Legacy</span>
+                        Building Legacy
                     </h2>
                     <p className="text-xl text-[#34495e]">
                         Explore our landmark projects that define global construction excellence and innovation.
@@ -349,7 +349,7 @@ export default function Projects() {
                     {/* Load More Button */}
                     {filteredProjects.length > 6 && (
                         <div className="text-center">
-                            <Button variant="outline" size="lg">
+                            <Button variant="primary" size="lg">
                                 Load More Projects
                                 <ChevronRight className="inline ml-2" />
                             </Button>

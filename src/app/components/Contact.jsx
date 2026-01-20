@@ -53,10 +53,10 @@ export default function Contact() {
         {
             id: 'global',
             name: 'Global Headquarters',
-            address: '123 Construction Plaza, Suite 1000, New York, NY 10001',
-            phone: '+1 (555) 123-4567',
-            email: 'global@golide-minerals.com',
-            hours: 'Mon-Fri: 8:00 AM - 6:00 PM EST',
+            address: '123 Bryanston Drive, Suite 100, Bryanston, JHB, 1455',
+            phone: '+27 (11) 890 4567',
+            email: 'global@golide-minerals.co.za',
+            hours: 'Mon-Fri: 8:00 AM - 5:00 PM EST',
             description: 'Main coordination center for international operations'
         },
         {
@@ -92,21 +92,21 @@ export default function Contact() {
         {
             icon: <Phone className="text-[#8dc6ff]" size={24} />,
             title: 'Call Us',
-            details: '+1 (555) 123-4567',
+            details: '+27 (11) 890 4567',
             description: 'Available 24/7 for emergency consultations',
             action: 'Schedule Call'
         },
         {
             icon: <Mail className="text-[#8dc6ff]" size={24} />,
             title: 'Email Us',
-            details: 'contact@golide-minerals.com',
+            details: 'contact@golide-minerals.co.za',
             description: 'Response within 4 business hours',
             action: 'Send Email'
         },
         {
             icon: <MessageSquare className="text-[#8dc6ff]" size={24} />,
             title: 'Live Chat',
-            details: 'Available 9AM-6PM EST',
+            details: 'Available 8AM-5PM EST',
             description: 'Instant support from our experts',
             action: 'Start Chat'
         }
@@ -182,7 +182,7 @@ export default function Contact() {
                         <span className="text-sm font-medium text-[#22313f]">Get in Touch</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-[#22313f] mb-6">
-                        Let us <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8dc6ff] to-[#34495e]">Build Together</span>
+                        Let us Build Together
                     </h2>
                     <p className="text-xl text-[#34495e]">
                         Ready to start your next construction project? Contact our team for expert consultation.
@@ -219,8 +219,8 @@ export default function Contact() {
                                     <Send size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-2xl font-bold text-[#22313f]">Send Inquiry</h3>
-                                    <p className="text-[#34495e]">Fill out the form and we will respond within 24 hours</p>
+                                    <h3 className="text-2xl font-bold text-[#8dc6ff]">Send Inquiry</h3>
+                                    <p className="text-[#e4f1fe]">Fill out the form and we will respond within 24 hours</p>
                                 </div>
                             </div>
 
@@ -228,19 +228,19 @@ export default function Contact() {
                             <div className="flex border-b border-[#e4f1fe] mb-6">
                                 <button
                                     onClick={() => setActiveTab('inquiry')}
-                                    className={`px-6 py-3 font-medium ${activeTab === 'inquiry' ? 'text-[#8dc6ff] border-b-2 border-[#8dc6ff]' : 'text-[#34495e]'}`}
+                                    className={`px-6 py-3 font-medium ${activeTab === 'inquiry' ? 'text-[#8dc6ff] border-b-2 border-[#8dc6ff]' : 'text-[#8dc6ff]'}`}
                                 >
                                     Project Inquiry
                                 </button>
                                 <button
                                     onClick={() => setActiveTab('support')}
-                                    className={`px-6 py-3 font-medium ${activeTab === 'support' ? 'text-[#8dc6ff] border-b-2 border-[#8dc6ff]' : 'text-[#34495e]'}`}
+                                    className={`px-6 py-3 font-medium ${activeTab === 'support' ? 'text-[#8dc6ff] border-b-2 border-[#8dc6ff]' : 'text-[#8dc6ff]'}`}
                                 >
                                     Technical Support
                                 </button>
                                 <button
                                     onClick={() => setActiveTab('careers')}
-                                    className={`px-6 py-3 font-medium ${activeTab === 'careers' ? 'text-[#8dc6ff] border-b-2 border-[#8dc6ff]' : 'text-[#34495e]'}`}
+                                    className={`px-6 py-3 font-medium ${activeTab === 'careers' ? 'text-[#8dc6ff] border-b-2 border-[#8dc6ff]' : 'text-[#8dc6ff]'}`}
                                 >
                                     Careers Inquiry
                                 </button>
@@ -251,8 +251,8 @@ export default function Contact() {
                                     <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-[#8dc6ff] to-[#34495e] rounded-full flex items-center justify-center text-white">
                                         <CheckCircle size={32} />
                                     </div>
-                                    <h4 className="text-2xl font-bold text-[#22313f] mb-3">Message Sent Successfully!</h4>
-                                    <p className="text-[#34495e] mb-8">
+                                    <h4 className="text-2xl font-bold text-[#8dc6ff] mb-3">Message Sent Successfully!</h4>
+                                    <p className="text-[#e4f1fe] mb-8">
                                         Thank you for contacting Golide Minerals Exchange. Our team will get back to you within 24 hours.
                                     </p>
                                     <Button variant="outline" onClick={() => setSubmitSuccess(false)}>
@@ -263,7 +263,7 @@ export default function Contact() {
                                 <form onSubmit={handleSubmit}>
                                     <div className="grid md:grid-cols-2 gap-6 mb-6">
                                         <div>
-                                            <label className="block text-sm font-medium text-[#22313f] mb-2">
+                                            <label className="block text-sm font-medium text-[#e4f1fe] mb-2">
                                                 Full Name *
                                             </label>
                                             <input
@@ -278,7 +278,7 @@ export default function Contact() {
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm font-medium text-[#22313f] mb-2">
+                                            <label className="block text-sm font-medium text-[#e4f1fe] mb-2">
                                                 Email Address *
                                             </label>
                                             <input
@@ -293,7 +293,7 @@ export default function Contact() {
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm font-medium text-[#22313f] mb-2">
+                                            <label className="block text-sm font-medium text-[#e4f1fe] mb-2">
                                                 Phone Number
                                             </label>
                                             <input
@@ -307,7 +307,7 @@ export default function Contact() {
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm font-medium text-[#22313f] mb-2">
+                                            <label className="block text-sm font-medium text-[#e4f1fe] mb-2">
                                                 Company / Organization
                                             </label>
                                             <input
@@ -323,7 +323,7 @@ export default function Contact() {
 
                                     <div className="grid md:grid-cols-2 gap-6 mb-6">
                                         <div>
-                                            <label className="block text-sm font-medium text-[#22313f] mb-2">
+                                            <label className="block text-sm font-medium text-[#e4f1fe] mb-2">
                                                 Project Type *
                                             </label>
                                             <select
@@ -341,7 +341,7 @@ export default function Contact() {
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm font-medium text-[#22313f] mb-2">
+                                            <label className="block text-sm font-medium text-[#e4f1fe] mb-2">
                                                 Estimated Budget
                                             </label>
                                             <select
@@ -359,7 +359,7 @@ export default function Contact() {
                                     </div>
 
                                     <div className="mb-6">
-                                        <label className="block text-sm font-medium text-[#22313f] mb-2">
+                                        <label className="block text-sm font-medium text-[#e4f1fe] mb-2">
                                             Project Details *
                                         </label>
                                         <textarea
@@ -382,7 +382,7 @@ export default function Contact() {
                                             onChange={handleInputChange}
                                             className="w-4 h-4 text-[#8dc6ff] bg-white border-[#e4f1fe] rounded focus:ring-[#8dc6ff]"
                                         />
-                                        <label htmlFor="receiveUpdates" className="text-sm text-[#34495e]">
+                                        <label htmlFor="receiveUpdates" className="text-sm text-[#e4f1fe]">
                                             I agree to receive updates, newsletters, and promotional materials from Golide Minerals Exchange
                                         </label>
                                     </div>
@@ -397,7 +397,7 @@ export default function Contact() {
                                         <ArrowRight className="inline ml-2 group-hover:translate-x-1 transition-transform" />
                                     </Button>
 
-                                    <p className="text-sm text-[#34495e] text-center mt-4">
+                                    <p className="text-sm text-[#e4f1fe] text-center mt-4">
                                         By submitting, you agree to our Privacy Policy and Terms of Service
                                     </p>
                                 </form>
@@ -414,12 +414,11 @@ export default function Contact() {
                                     <div className="w-14 h-14 mx-auto mb-4 bg-gradient-to-br from-[#8dc6ff]/10 to-[#34495e]/10 rounded-xl flex items-center justify-center">
                                         {method.icon}
                                     </div>
-                                    <h4 className="font-bold text-[#22313f] mb-2">{method.title}</h4>
-                                    <p className="text-sm text-[#34495e] mb-3">{method.details}</p>
-                                    <p className="text-xs text-[#34495e]/70 mb-4">{method.description}</p>
+                                    <h4 className="font-bold text-[#8dc6ff] mb-2">{method.title}</h4>
+                                    <p className="text-sm text-[#e4f1fe] mb-3">{method.details}</p>
+                                    <p className="text-xs text-[#e4f1fe]/70 mb-4">{method.description}</p>
                                     <Button variant="outline" size="sm" className="w-full">
                                         {method.action}
-                                        <ChevronRight size={14} className="ml-1" />
                                     </Button>
                                 </Card>
                             ))}
@@ -429,7 +428,7 @@ export default function Contact() {
                         <Card className="p-8">
                             <div className="flex items-center gap-3 mb-6">
                                 <Globe className="text-[#8dc6ff]" size={24} />
-                                <h3 className="text-2xl font-bold text-[#22313f]">Global Offices</h3>
+                                <h3 className="text-2xl font-bold text-[#8dc6ff]">Global Offices</h3>
                             </div>
 
                             {/* Office Selector */}
@@ -440,7 +439,7 @@ export default function Contact() {
                                         onClick={() => setSelectedOffice(office.id)}
                                         className={`px-4 py-2 rounded-lg transition-all ${selectedOffice === office.id
                                             ? 'bg-gradient-to-r from-[#8dc6ff] to-[#34495e] text-white'
-                                            : 'bg-[#e4f1fe] text-[#22313f] hover:bg-[#8dc6ff]/10'
+                                            : 'bg-[#e4f1fe] text-[#22313f]'
                                             }`}
                                     >
                                         {office.name.split(' ')[0]}
@@ -456,27 +455,27 @@ export default function Contact() {
                                             <Building className="text-[#8dc6ff]" size={20} />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-[#22313f] mb-1">{selectedOfficeData.name}</h4>
-                                            <p className="text-sm text-[#34495e]">{selectedOfficeData.description}</p>
+                                            <h4 className="font-bold text-[#8dc6ff] mb-1">{selectedOfficeData.name}</h4>
+                                            <p className="text-sm text-[#e4f1fe]">{selectedOfficeData.description}</p>
                                         </div>
                                     </div>
 
                                     <div className="space-y-3">
                                         <div className="flex items-center gap-3">
-                                            <MapPin size={18} className="text-[#34495e]" />
-                                            <span className="text-[#22313f]">{selectedOfficeData.address}</span>
+                                            <MapPin size={18} className="text-[#e4f1fe]" />
+                                            <span className="text-[#e4f1fe]">{selectedOfficeData.address}</span>
                                         </div>
                                         <div className="flex items-center gap-3">
-                                            <Phone size={18} className="text-[#34495e]" />
-                                            <span className="text-[#22313f]">{selectedOfficeData.phone}</span>
+                                            <Phone size={18} className="text-[#e4f1fe]" />
+                                            <span className="text-[#e4f1fe]">{selectedOfficeData.phone}</span>
                                         </div>
                                         <div className="flex items-center gap-3">
-                                            <Mail size={18} className="text-[#34495e]" />
-                                            <span className="text-[#22313f]">{selectedOfficeData.email}</span>
+                                            <Mail size={18} className="text-[#e4f1fe]" />
+                                            <span className="text-[#e4f1fe]">{selectedOfficeData.email}</span>
                                         </div>
                                         <div className="flex items-center gap-3">
-                                            <Clock size={18} className="text-[#34495e]" />
-                                            <span className="text-[#22313f]">{selectedOfficeData.hours}</span>
+                                            <Clock size={18} className="text-[#e4f1fe]" />
+                                            <span className="text-[#e4f1fe]">{selectedOfficeData.hours}</span>
                                         </div>
                                     </div>
 
@@ -485,8 +484,8 @@ export default function Contact() {
                                         <div className="h-48 rounded-lg bg-gradient-to-br from-[#8dc6ff]/10 to-[#34495e]/20 border border-[#8dc6ff]/30 flex items-center justify-center">
                                             <div className="text-center">
                                                 <MapPin className="mx-auto mb-2 text-[#8dc6ff]" size={32} />
-                                                <p className="text-[#22313f] font-medium">{selectedOfficeData.name}</p>
-                                                <p className="text-sm text-[#34495e]">Interactive Map</p>
+                                                <p className="text-[#8dc6ff] font-medium">{selectedOfficeData.name}</p>
+                                                <p className="text-sm text-[#e4f1fe]">Interactive Map</p>
                                             </div>
                                         </div>
                                     </div>
@@ -525,13 +524,13 @@ export default function Contact() {
                                     <PhoneCall size={24} />
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-[#22313f]">Emergency Contact</h3>
-                                    <p className="text-[#34495e]">24/7 for urgent matters</p>
+                                    <h3 className="text-xl font-bold text-[#8dc6ff]">Emergency Contact</h3>
+                                    <p className="text-[#e4f1fe]">24/7 for urgent matters</p>
                                 </div>
                             </div>
                             <div className="text-center">
-                                <div className="text-2xl font-bold text-[#8dc6ff] mb-2">+1 (555) 911-4567</div>
-                                <p className="text-sm text-[#34495e]">Available round the clock for emergency construction situations</p>
+                                <div className="text-2xl font-bold text-[#8dc6ff] mb-2">+27 (11) 234-4567</div>
+                                <p className="text-sm text-[#e4f1fe]">Available round the clock for emergency construction situations</p>
                             </div>
                         </Card>
                     </div>

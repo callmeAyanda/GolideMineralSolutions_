@@ -65,7 +65,7 @@ export default function Services() {
                 'Resource optimization',
                 'Environmental monitoring'
             ],
-            color: 'from-[#8dc6ff] to-[#22313f]'
+            color: 'from-[#34495e] to-[#22313f]'
         },
         {
             id: 2,
@@ -78,7 +78,7 @@ export default function Services() {
                 'Ground improvement',
                 'Underpinning solutions'
             ],
-            color: 'from-[#34495e] to-[#8dc6ff]'
+            color: 'from-[#34495e] to-[#22313f]'
         },
         {
             id: 3,
@@ -91,7 +91,7 @@ export default function Services() {
                 'Ventilation systems',
                 'Safety monitoring'
             ],
-            color: 'from-[#8dc6ff] to-[#e4f1fe]'
+            color: 'from-[#34495e] to-[#22313f]'
         },
         {
             id: 4,
@@ -104,7 +104,7 @@ export default function Services() {
                 'Automation integration',
                 'Quality control labs'
             ],
-            color: 'from-[#22313f] to-[#34495e]'
+            color: 'from-[#34495e] to-[#22313f]'
         },
         {
             id: 5,
@@ -117,7 +117,7 @@ export default function Services() {
                 'Ports & harbors',
                 'Railway networks'
             ],
-            color: 'from-[#8dc6ff] to-[#34495e]'
+            color: 'from-[#34495e] to-[#22313f]'
         },
         {
             id: 6,
@@ -282,7 +282,7 @@ export default function Services() {
                         <span className="text-sm font-medium text-[#e4f1fe]">Our Expertise</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-[#e4f1fe] mb-6">
-                        Construction <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8dc6ff] to-[#e4f1fe]">Services</span>
+                        Construction Services
                     </h2>
                     <p className="text-xl text-[#e4f1fe]/80">
                         Comprehensive mineral construction solutions backed by cutting-edge technology and decades of expertise.

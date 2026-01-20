@@ -1,8 +1,10 @@
 'use client';
 
 import { ArrowRight, Play, Shield, Award, Clock } from 'lucide-react';
+
 import Button from './Button';
 import SectionContainer from './SectionContainer';
+
 
 export default function Hero() {
   const stats = [
@@ -12,14 +14,14 @@ export default function Hero() {
   ];
 
   return (
-    <SectionContainer 
-      id="home" 
+    <SectionContainer
+      id="home"
       className="relative overflow-hidden"
       padding="pt-24 pb-32 lg:pt-32 lg:pb-48"
     >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('/hero-pic.jpg')",
@@ -27,7 +29,7 @@ export default function Hero() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#22313f]/90 via-[#22313f]/80 to-[#34495e]/70" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#22313f] via-transparent to-transparent" />
-        
+
         {/* Geometric Patterns */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 border-2 border-[#8dc6ff] rounded-full"></div>
@@ -40,7 +42,7 @@ export default function Hero() {
       <div className="relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            
+
             {/* Left Content */}
             <div className="flex-1 text-center lg:text-left">
               {/* Badge */}
@@ -61,24 +63,23 @@ export default function Hero() {
 
               {/* Description */}
               <p className="text-xl text-[#e4f1fe]/90 mb-10 max-w-2xl mx-auto lg:mx-0">
-                Pioneering sustainable mineral construction solutions across continents. 
-                We bridge innovation with infrastructure, delivering projects that stand 
+                Pioneering sustainable mineral construction solutions across continents.
+                We bridge innovation with infrastructure, delivering projects that stand
                 the test of time and nature.
               </p>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 mb-16 justify-center lg:justify-start">
-                <Button 
-                  size="lg" 
+                <Button
+                  size="lg"
                   className="group"
                   onClick={() => console.log('Get Started clicked')}
                 >
                   Start Your Project
                   <ArrowRight className="inline ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                
-                <Button 
-                  variant="outline" 
+
+                <Button
                   size="lg"
                   className="group"
                   onClick={() => console.log('Learn More clicked')}
@@ -91,8 +92,8 @@ export default function Hero() {
               {/* Stats */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-xl mx-auto lg:mx-0">
                 {stats.map((stat, index) => (
-                  <div 
-                    key={index} 
+                  <div
+                    key={index}
                     className="bg-gradient-to-br from-[#34495e]/50 to-[#22313f]/50 backdrop-blur-sm border border-[#e4f1fe]/10 rounded-2xl p-4 transform hover:scale-105 transition-all duration-300"
                   >
                     <div className="flex items-center justify-center gap-2 mb-2">
@@ -110,7 +111,7 @@ export default function Hero() {
               <div className="relative w-full h-64 lg:h-96 rounded-3xl overflow-hidden shadow-2xl shadow-[#8dc6ff]/20">
                 {/* Placeholder for 3D model or interactive element */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#8dc6ff]/20 to-[#34495e]/40 backdrop-blur-sm border border-[#e4f1fe]/20 rounded-3xl flex items-center justify-center">
-                  
+
                   {/* Interactive Floating Elements */}
                   <div className="relative w-64 h-64 lg:w-80 lg:h-80">
                     {/* Main Circle */}
@@ -148,7 +149,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden lg:block">
+        <div className="absolute bottom left-1/2 transform -translate-x-1/2 hidden lg:block">
           <div className="flex flex-col items-center">
             <span className="text-[#e4f1fe]/60 text-sm mb-2">Explore More</span>
             <div className="w-6 h-10 border-2 border-[#8dc6ff]/50 rounded-full flex justify-center">

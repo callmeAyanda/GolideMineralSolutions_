@@ -16,10 +16,10 @@ import Button from './Button';
 const getTypeIcon = (type) => {
     switch (type) {
         case 'whitepaper': return <FileText size={20} className="text-[#8dc6ff]" />;
-        case 'casestudy': return <BarChart size={20} className="text-[#34495e]" />;
-        case 'report': return <TrendingUp size={20} className="text-[#22313f]" />;
+        case 'casestudy': return <BarChart size={20} className="text-[#8dc6ff]" />;
+        case 'report': return <TrendingUp size={20} className="text-[#8dc6ff]" />;
         case 'guide': return <BookOpen size={20} className="text-[#8dc6ff]" />;
-        case 'video': return <Video size={20} className="text-[#34495e]" />;
+        case 'video': return <Video size={20} className="text-[#8dc6ff]" />;
         default: return <FileText size={20} />;
     }
 };
@@ -64,11 +64,6 @@ const ResourceCard = ({ resource, onView, compact = false }) => {
                             <span className="text-xs font-medium text-[#8dc6ff] uppercase">{category}</span>
                             <div className="flex items-center gap-2">
                                 <span className="text-xs text-[#e4f1fe]/60">{type}</span>
-                                {featured && (
-                                    <span className="text-xs bg-gradient-to-r from-[#8dc6ff] to-[#34495e] text-white px-2 py-0.5 rounded-full">
-                                        Featured
-                                    </span>
-                                )}
                             </div>
                         </div>
                     </div>
@@ -77,10 +72,6 @@ const ResourceCard = ({ resource, onView, compact = false }) => {
                     <p className="text-sm text-[#e4f1fe]/70 mb-3 line-clamp-2">{description}</p>
 
                     <div className="flex items-center justify-between text-xs text-[#e4f1fe]/50">
-                        <span className="flex items-center gap-1">
-                            <Calendar size={12} />
-                            {date}
-                        </span>
                         <span className="flex items-center gap-1">
                             <Download size={12} />
                             {downloads}
@@ -94,12 +85,6 @@ const ResourceCard = ({ resource, onView, compact = false }) => {
     return (
         <Card className="group cursor-pointer hover-lift" onClick={onView}>
             <div className="relative">
-                {featured && (
-                    <div className="absolute top-4 right-4 bg-gradient-to-r from-[#8dc6ff] to-[#34495e] text-white text-xs font-medium px-3 py-1 rounded-full z-10">
-                        Featured
-                    </div>
-                )}
-
                 <div className="p-6">
                     <div className="flex items-start justify-between mb-4">
                         <div>
@@ -138,21 +123,9 @@ const ResourceCard = ({ resource, onView, compact = false }) => {
                                 <User size={14} />
                                 {author}
                             </span>
-                            <span className="flex items-center gap-1">
-                                <Calendar size={14} />
-                                {date}
-                            </span>
-                            <span className="flex items-center gap-1">
-                                <Clock size={14} />
-                                {readTime}
-                            </span>
                         </div>
 
                         <div className="flex items-center gap-4">
-                            <div className="flex items-center gap-2 text-sm text-[#e4f1fe]/60">
-                                <Eye size={14} />
-                                <span>{views}</span>
-                            </div>
                             <button className="flex items-center gap-2 text-[#8dc6ff] font-medium group">
                                 View Resource
                                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -193,10 +166,6 @@ export default function Resources() {
             category: 'Sustainability',
             description: 'Comprehensive guide to eco-friendly mining practices and technologies.',
             author: 'Dr. Sarah Chen',
-            date: 'Jan 15, 2024',
-            readTime: '15 min',
-            downloads: 1245,
-            views: 3200,
             featured: true,
             tags: ['Sustainability', 'Innovation', 'Mining']
         },
@@ -207,10 +176,6 @@ export default function Resources() {
             category: 'Infrastructure',
             description: 'Success story of the Transcontinental Tunnel Network project.',
             author: 'Marcus Johnson',
-            date: 'Dec 8, 2023',
-            readTime: '25 min',
-            downloads: 890,
-            views: 2100,
             featured: true,
             tags: ['Tunneling', 'Safety', 'Innovation']
         },
@@ -221,10 +186,6 @@ export default function Resources() {
             category: 'Industry',
             description: 'Analysis of global construction trends and market opportunities.',
             author: 'Global Research Team',
-            date: 'Nov 22, 2023',
-            readTime: '30 min',
-            downloads: 2100,
-            views: 4500,
             featured: false,
             tags: ['Market Analysis', 'Trends', 'Global']
         },
@@ -235,10 +196,6 @@ export default function Resources() {
             category: 'Safety',
             description: 'Complete guide to implementing AI-powered safety protocols.',
             author: 'David Rodriguez',
-            date: 'Oct 30, 2023',
-            readTime: '20 min',
-            downloads: 1560,
-            views: 3800,
             featured: true,
             tags: ['Safety', 'Automation', 'Technology']
         },
@@ -249,10 +206,6 @@ export default function Resources() {
             category: 'Sustainability',
             description: '5-part series on sustainable construction methodologies.',
             author: 'Environmental Team',
-            date: 'Sep 18, 2023',
-            readTime: '45 min',
-            downloads: 980,
-            views: 5200,
             featured: false,
             tags: ['Video', 'Sustainability', 'Education']
         },
@@ -263,10 +216,6 @@ export default function Resources() {
             category: 'Technology',
             description: 'Latest advancements in mineral extraction and processing.',
             author: 'Tech Innovation Lab',
-            date: 'Aug 12, 2023',
-            readTime: '18 min',
-            downloads: 1120,
-            views: 2900,
             featured: false,
             tags: ['Technology', 'Processing', 'Innovation']
         },
@@ -277,10 +226,6 @@ export default function Resources() {
             category: 'Infrastructure',
             description: 'Overcoming extreme conditions in Arctic projects.',
             author: 'Polar Engineering Team',
-            date: 'Jul 5, 2023',
-            readTime: '22 min',
-            downloads: 730,
-            views: 1800,
             featured: false,
             tags: ['Arctic', 'Engineering', 'Case Study']
         },
@@ -291,10 +236,6 @@ export default function Resources() {
             category: 'Technology',
             description: 'How digital technologies are revolutionizing mining operations.',
             author: 'Digital Solutions Group',
-            date: 'Jun 20, 2023',
-            readTime: '28 min',
-            downloads: 1650,
-            views: 4100,
             featured: true,
             tags: ['Digital', 'Transformation', 'Technology']
         }
@@ -330,7 +271,7 @@ export default function Resources() {
                         <span className="text-sm font-medium text-[#e4f1fe]">Knowledge Hub</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-[#e4f1fe] mb-6">
-                        Industry <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#8dc6ff] to-[#e4f1fe]">Resources</span>
+                        Industry Resources
                     </h2>
                     <p className="text-xl text-[#e4f1fe]/80">
                         Access our library of whitepapers, case studies, and industry insights to stay ahead in mineral construction.
@@ -402,9 +343,8 @@ export default function Resources() {
                             <h3 className="text-2xl font-bold text-[#e4f1fe]">Featured Resources</h3>
                             <p className="text-[#e4f1fe]/80">Top industry insights and research</p>
                         </div>
-                        <Button variant="outline" size="sm" className="text-[#e4f1fe] border-[#e4f1fe] hover:bg-[#e4f1fe] hover:text-[#22313f]">
+                        <Button size="sm" className="text-[#e4f1fe] border-[#e4f1fe] hover:text-[#e4f1fe]">
                             View All Featured
-                            <ArrowRight size={16} className="ml-2" />
                         </Button>
                     </div>
 
@@ -470,9 +410,9 @@ export default function Resources() {
                         <div className="space-y-6">
                             {[
                                 { label: 'Total Downloads', value: '15,420', icon: <Download className="text-[#8dc6ff]" /> },
-                                { label: 'Monthly Views', value: '32,800', icon: <Eye className="text-[#34495e]" /> },
+                                { label: 'Monthly Views', value: '32,800', icon: <Eye className="text-[#8dc6ff]" /> },
                                 { label: 'Countries Reached', value: '65+', icon: <Globe className="text-[#8dc6ff]" /> },
-                                { label: 'Industry Partners', value: '48', icon: <User className="text-[#34495e]" /> }
+                                { label: 'Industry Partners', value: '48', icon: <User className="text-[#8dc6ff]" /> }
                             ].map((stat, index) => (
                                 <div key={index} className="flex items-center justify-between">
                                     <div className="flex items-center gap-3">
@@ -517,28 +457,7 @@ export default function Resources() {
                             </Button>
                         </div>
                     </Card>
-                </div>
-
-                {/* CTA Section */}
-                <div className="text-center">
-                    <Card className="p-12 bg-gradient-to-br from-[#8dc6ff] to-[#34495e] text-center">
-                        <h3 className="text-3xl font-bold text-white mb-6">
-                            Ready to Access Premium Resources?
-                        </h3>
-                        <p className="text-xl text-white/90 max-w-2xl mx-auto mb-8">
-                            Unlock exclusive content, research papers, and industry insights by becoming a partner.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Button size="lg" variant="secondary" className="group">
-                                Become a Partner
-                                <ArrowRight className="inline ml-2 group-hover:translate-x-1 transition-transform" />
-                            </Button>
-                            <Button variant="outline" size="lg" className="text-white border-white hover:bg-white hover:text-[#22313f]">
-                                Schedule Demo
-                            </Button>
-                        </div>
-                    </Card>
-                </div>
+                </div>                
             </div>
         </SectionContainer>
     );

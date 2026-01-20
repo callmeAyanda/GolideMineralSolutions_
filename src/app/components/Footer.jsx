@@ -178,7 +178,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-[#e4f1fe]/60">Call Us</p>
-                                    <p className="font-medium">+1 (555) 123-4567</p>
+                                    <p className="font-medium">+27 (11) 123-4567</p>
                                 </div>
                             </div>
 
@@ -188,7 +188,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-[#e4f1fe]/60">Email Us</p>
-                                    <p className="font-medium">contact@golide-minerals.com</p>
+                                    <p className="font-medium">contact@golide-minerals.co.za</p>
                                 </div>
                             </div>
 
@@ -241,37 +241,6 @@ export default function Footer() {
                     </div>
                 </div>
 
-                {/* Middle Divider */}
-                <div className="border-t border-[#34495e] my-8"></div>
-
-                {/* Global Presence */}
-                <div className="mb-8">
-                    <div className="flex items-center gap-3 mb-6">
-                        <Globe className="text-[#8dc6ff]" size={24} />
-                        <h3 className="text-xl font-bold">Global Presence</h3>
-                    </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {[
-                            { country: 'United States', projects: 45 },
-                            { country: 'Canada', projects: 28 },
-                            { country: 'Australia', projects: 32 },
-                            { country: 'United Kingdom', projects: 24 },
-                            { country: 'Germany', projects: 19 },
-                            { country: 'Japan', projects: 16 },
-                            { country: 'Saudi Arabia', projects: 21 },
-                            { country: 'South Africa', projects: 14 }
-                        ].map((location, index) => (
-                            <div
-                                key={index}
-                                className="bg-gradient-to-br from-[#34495e]/30 to-[#22313f]/30 rounded-lg p-4 border border-[#8dc6ff]/10 hover:border-[#8dc6ff]/30 transition-colors"
-                            >
-                                <div className="text-lg font-bold text-[#8dc6ff]">{location.country}</div>
-                                <div className="text-sm text-[#e4f1fe]/70">{location.projects} Projects</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-[#34495e]">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-6">
@@ -291,23 +260,7 @@ export default function Footer() {
                                     {link.label}
                                 </Link>
                             ))}
-                        </div>
-
-                        {/* Stats */}
-                        <div className="flex items-center gap-6">
-                            <div className="flex items-center gap-2">
-                                <Users size={16} className="text-[#8dc6ff]" />
-                                <span className="text-sm">
-                                    <span className="font-bold text-[#e4f1fe]">250+</span> Clients
-                                </span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <Award size={16} className="text-[#8dc6ff]" />
-                                <span className="text-sm">
-                                    <span className="font-bold text-[#e4f1fe]">15+</span> Years
-                                </span>
-                            </div>
-                        </div>
+                        </div>                        
                     </div>
 
                     {/* Made with love */}

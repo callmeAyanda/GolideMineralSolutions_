@@ -1,6 +1,6 @@
 "use client";
 
-// components/Button.js
+
 export default function Button({
     children,
     variant = 'primary',
