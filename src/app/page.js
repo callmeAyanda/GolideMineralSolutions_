@@ -1,14 +1,13 @@
 import { React } from "react";
 import "./globals.css";
 
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Services from "./components/Services";
-import Projects from "./components/Projects";
-import Resources from "./components/Resources";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-
+import Hero from "./sections/home/Hero";
+import About from "./sections/home/About";
+import Services from "./sections/home/Services";
+import Projects from "./sections/home/Projects";
+import Resources from "./sections/home/Resources";
+import Contact from "./sections/home/Contact";
+import Footer from "./sections/home/Footer";
 
 export default function Home() {
   return (
@@ -23,4 +22,3 @@ export default function Home() {
     </main>
   );
 }
-

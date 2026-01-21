@@ -7,10 +7,10 @@ import {
     TrendingUp, Shield, Leaf, Zap
 } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import SectionContainer from './SectionContainer';
-import Card from './Card';
-import Button from './Button';
-import Filter from './Filter';
+import SectionContainer from '../../components/SectionContainer';
+import Card from '../../components/Card';
+import Button from '../../components/Button';
+import Filter from '../../components/Filter';
 
 
 export default function Projects() {

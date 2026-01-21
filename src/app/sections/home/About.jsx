@@ -7,10 +7,10 @@ import {
   CheckCircle
 } from 'lucide-react';
 
-import SectionContainer from './SectionContainer';
-import Card from './Card';
-import IconBox from './IconBox';
-import Button from './Button';
+import SectionContainer from '../components/SectionContainer';
+import Card from '../components/Card';
+import IconBox from '../components/IconBox';
+import Button from '../components/Button';
 
 
 export default function About() {

@@ -8,9 +8,9 @@ import {
     Shield, Leaf, Zap, Award
 } from 'lucide-react';
 import { useState } from 'react';
-import SectionContainer from './SectionContainer';
-import Card from './Card';
-import Button from './Button';
+import SectionContainer from '../components/SectionContainer';
+import Card from '../components/Card';
+import Button from '../components/Button';
 
 
 const getTypeIcon = (type) => {

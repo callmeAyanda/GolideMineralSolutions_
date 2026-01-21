@@ -26,22 +26,35 @@ A modern, responsive portfolio website showcasing front-end development skills u
 my-app/
 ├── public/                 # Static assets
 ├── src/
-│   ├── app/
-│   │   ├── globals.css     # Global styles
-│   │   ├── layout.js       # Root layout
-│   │   ├── page.js         # Home page
-│   │   └── about/
-│   │       └── page.jsx    # About page
-│   ├── components/         # Reusable UI components
-│   │   ├── Hero.jsx        # Hero section
-│   │   ├── Navbar.jsx      # Navigation bar
-│   │   ├── About.jsx       # About section
-│   │   ├── Projects.jsx    # Projects showcase
-│   │   ├── Services.jsx    # Services offered
-│   │   ├── Contact.jsx     # Contact form
-│   │   └── ...             # Other components
-│   └── sections/           # Page sections
-└── config files            # Next.js, Tailwind, ESLint configs
+│   └── app/
+│       ├── globals.css     # Global styles
+│       ├── layout.js       # Root layout
+│       ├── page.js         # Home page
+│       ├── about/
+│       │   └── page.jsx    # About page
+│       ├── components/     # Reusable UI components
+│       │   ├── Button.jsx
+│       │   ├── Card.jsx
+│       │   ├── Filter.jsx
+│       │   ├── IconBox.jsx
+│       │   ├── Navbar.jsx
+│       │   ├── SectionContainer.jsx
+│       │   └── Tabs.jsx
+│       └── sections/       # Page sections
+│           └── home/
+│               ├── About.jsx
+│               ├── Contact.jsx
+│               ├── Footer.jsx
+│               ├── Hero.jsx
+│               ├── Projects.jsx
+│               ├── Resources.jsx
+│               └── Services.jsx
+├── eslint.config.mjs       # ESLint configuration
+├── jsconfig.json           # JavaScript configuration
+├── next.config.mjs         # Next.js configuration
+├── package.json            # Dependencies and scripts
+├── postcss.config.mjs      # PostCSS configuration
+└── tailwind.config.js      # Tailwind CSS configuration
 ```
 
 ## 🏃‍♂️ Getting Started
@@ -131,10 +144,10 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-- **Name**: [Your Name]
-- **Email**: [your.email@example.com]
-- **LinkedIn**: [Your LinkedIn Profile]
-- **Portfolio**: [Your Portfolio URL]
+- **Name**: Ayanda Makhubu
+- **Email**: a22.makhubu@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/ayanda-makhubu/
+- **Portfolio**: Yet to come
 
 ---
 

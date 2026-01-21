@@ -2,8 +2,8 @@
 
 import { ArrowRight, Play, Shield, Award, Clock } from 'lucide-react';
 
-import Button from './Button';
-import SectionContainer from './SectionContainer';
+import Button from '../components/Button';
+import SectionContainer from '../components/SectionContainer';
 
 
 export default function Hero() {
