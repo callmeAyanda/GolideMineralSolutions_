@@ -91,7 +91,7 @@ export default function Footer() {
 
                         <p className="text-[#e4f1fe]/80 mb-6">
                             Pioneering sustainable mineral construction solutions across continents.
-                            Building tomorrow's infrastructure with today's innovation.
+                            Building tomorrow&apos;s infrastructure with today&apos;s innovation.
                         </p>
 
                         {/* Certifications */}

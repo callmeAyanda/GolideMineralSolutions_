@@ -21,9 +21,20 @@ export default function Projects() {
 
     const [isClient, setIsClient] = useState(false);
 
+    // useEffect(() => {
+    // setIsClient(true);
+    // }, []);
+
     useEffect(() => {
-    setIsClient(true);
-    }, []);
+        if (isModalOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isModalOpen]);
 
     const categories = [
         { id: 'mining', name: 'Mining', count: 8 },
@@ -196,13 +207,11 @@ export default function Projects() {
     const openProjectModal = (project) => {
         setSelectedProject(project);
         setIsModalOpen(true);
-        document.body.style.overflow = 'hidden'; // Prevent background scroll
     };
 
     const closeProjectModal = () => {
         setIsModalOpen(false);
         setSelectedProject(null);
-        document.body.style.overflow = 'auto';
     };
 
     // Close modal on escape key
