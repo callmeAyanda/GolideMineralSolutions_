@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
-import Button from '../../components/Button';
+import Button from '@/app/components/Button';
 
 
 export default function Footer() {

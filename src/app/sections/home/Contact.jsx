@@ -8,9 +8,9 @@ import {
     Calendar, Shield, Zap, HeadphonesIcon
 } from 'lucide-react';
 import { useState } from 'react';
-import SectionContainer from '../components/SectionContainer';
-import Card from '../components/Card';
-import Button from '../components/Button';
+import SectionContainer from '@/app/components/SectionContainer';
+import Card from '@/app/components/Card';
+import Button from '@/app/components/Button';
 
 export default function Contact() {
     const [formData, setFormData] = useState({

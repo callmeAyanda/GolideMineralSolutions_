@@ -7,11 +7,11 @@ import {
     Toolbox, Anchor, HardHat, Truck
 } from 'lucide-react';
 
-import SectionContainer from '../components/SectionContainer';
-import Card from '../components/Card';
-import IconBox from '../components/IconBox';
-import Button from '../components/Button';
-import Tabs from '../components/Tabs';
+import SectionContainer from '@/app/components/SectionContainer';
+import Card from '@/app/components/Card';
+import IconBox from '@/app/components/IconBox';
+import Button from '@/app/components/Button';
+import Tabs from '@/app/components/Tabs';
 import { useState, useEffect } from 'react';
 
 
